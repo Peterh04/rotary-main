@@ -1,0 +1,23 @@
+.text-link {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--blue-700);
+  background: linear-gradient(var(--gold-500), var(--gold-500)) 0 100% / 28px 3px no-repeat;
+  transition: background-size 0.4s var(--ease), color 0.25s;
+}
+
+.text-link__arrow { display: inline-block; margin-left: 6px; transition: transform 0.3s var(--ease); }
+
+.text-link:hover,
+.text-link:focus-visible,
+.text-link:active,
+a:hover > .text-link,
+.card-link:hover .text-link { background-size: 100% 3px; }
+
+.text-link:hover .text-link__arrow,
+a:hover > .text-link .text-link__arrow,
+.card-link:hover .text-link .text-link__arrow { transform: translateX(5px); }
+
+.text-link--light { color: var(--white); }

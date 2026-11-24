@@ -1,0 +1,10 @@
+.project-card { display: block; }
+
+.project-card__media { aspect-ratio: 4 / 3; margin-bottom: 24px; overflow: hidden; border-radius: 6px; background: var(--blue-100); }
+.project-card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s var(--ease); }
+.project-card:hover .project-card__media img { transform: scale(1.05); }
+
+.project-card__category { margin-bottom: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-600); }
+.project-card__title { margin-bottom: 10px; font-size: 22px; transition: color 0.25s; }
+.project-card:hover .project-card__title { color: var(--blue-600); }
+.project-card__summary { font-size: 16px; color: var(--muted); }

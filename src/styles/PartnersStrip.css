@@ -1,0 +1,12 @@
+.partners-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 40px;
+  padding: 36px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.partners-strip__label { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue-600); }
+.partners-strip__list { display: flex; flex-wrap: wrap; gap: 12px 40px; font-size: 15px; font-weight: 600; color: var(--muted); }

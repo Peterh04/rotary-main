@@ -1,0 +1,112 @@
+/* ---------- Home page layout (component styles live beside each component) ---------- */
+
+.home-divider {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+.home-more {
+  margin-top: 56px;
+}
+
+/* Who we are */
+.home-about {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 104px;
+  align-items: center;
+}
+.home-about__text {
+  margin: 28px 0 36px;
+  color: var(--muted);
+}
+.home-about__media {
+  height: 420px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--blue-100);
+}
+.home-about__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s var(--ease);
+}
+.home-about__media:hover img {
+  transform: scale(1.05);
+}
+
+/* Focus areas */
+.home-focus__list {
+  margin-top: 48px;
+}
+.home-focus__list > :last-child .focus-row {
+  border-bottom: 1px solid var(--line);
+}
+
+/* Recent projects */
+.home-projects {
+  background: var(--blue-50);
+}
+.home-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 56px;
+}
+
+/* Team */
+.home-team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 56px;
+}
+
+/* News */
+.home-news__grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 64px;
+  margin-top: 56px;
+}
+.home-news__side {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Partners */
+.home-partners {
+  padding-bottom: 112px;
+}
+
+/* ---------- Tablet and phone ---------- */
+@media (max-width: 900px) {
+  .home-about {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .home-about__media {
+    height: 300px;
+  }
+  .home-projects__grid,
+  .home-team__grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    margin-top: 40px;
+  }
+  .home-news__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  .home-focus__list {
+    margin-top: 32px;
+  }
+  .home-more {
+    margin-top: 40px;
+  }
+  .home-partners {
+    padding-bottom: 72px;
+  }
+}

@@ -1,0 +1,28 @@
+.team-member { display: flex; align-items: center; gap: 22px; }
+
+.team-member__photo,
+.team-member__initials {
+  flex: none;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  transition: transform 0.5s var(--ease), background-color 0.3s, color 0.3s;
+}
+
+.team-member__photo { object-fit: cover; }
+
+.team-member__initials {
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--blue-900);
+  background: var(--blue-100);
+}
+
+.team-member:hover .team-member__photo,
+.team-member:hover .team-member__initials { transform: scale(1.06); }
+.team-member:hover .team-member__initials { background: var(--blue-700); color: var(--white); }
+
+.team-member__name { font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--blue-900); }
+.team-member__role { font-size: 15px; color: var(--muted); }

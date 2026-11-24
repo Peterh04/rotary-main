@@ -1,0 +1,88 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.header--scrolled { border-color: var(--line); box-shadow: 0 8px 24px -18px rgba(12, 60, 124, 0.6); }
+
+.header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 88px;
+  transition: min-height 0.3s var(--ease);
+}
+
+.header--scrolled .header__bar { min-height: 68px; }
+
+.header__logo { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; color: var(--blue-700); }
+
+.header__nav { display: flex; align-items: center; gap: 36px; }
+
+.header__link { position: relative; padding: 6px 0; font-size: 15px; font-weight: 600; color: var(--ink); }
+
+.header__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--gold-500);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease);
+}
+
+.header__link:hover::after,
+.header__link.is-active::after { transform: scaleX(1); }
+
+.header__cta { padding: 11px 24px; }
+.header__nav-cta { display: none; }
+
+.header__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.header__toggle span { display: block; width: 22px; height: 2px; background: var(--ink); transition: transform 0.3s var(--ease), opacity 0.2s; }
+.header__toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.header__toggle.is-open span:nth-child(2) { opacity: 0; }
+.header__toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 900px) {
+  .header__bar { min-height: 72px; }
+  .header__cta { display: none; }
+  .header__toggle { display: flex; }
+
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 8px var(--gutter) 28px;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .header__nav--open { display: flex; }
+  .header__link { width: 100%; padding: 14px 0; }
+  .header__link::after { bottom: 6px; right: auto; width: 28px; }
+  .header__nav-cta { display: inline-flex; margin-top: 16px; }
+}
