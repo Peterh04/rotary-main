@@ -1,0 +1,11 @@
+/* ---------- Gallery page layout (grid and viewer styles live in their components) ---------- */
+
+.gallery-section {
+  padding-bottom: 120px;
+}
+
+@media (max-width: 900px) {
+  .gallery-section {
+    padding-bottom: 72px;
+  }
+}
