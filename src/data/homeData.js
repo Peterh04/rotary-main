@@ -7,9 +7,10 @@ import Neonatal from "../assets/neonatal.png";
 import ExamSets from "../assets/exam.png";
 import TreePlanting from "../assets/treePlanting.png";
 import Care from "../assets/care.png";
+import HeroVideo from "../assets/hero.mp4";
 
 export const hero = {
-  videoSrc: "/videos/hero.mp4",
+  videoSrc: HeroVideo,
   webmSrc: "", // optional: '/videos/hero.webm'
   posterSrc: "/images/hero-poster.jpg",
   eyebrow: "Service · Community · Impact",
