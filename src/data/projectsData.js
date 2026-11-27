@@ -1,5 +1,18 @@
 // Projects page content. Swap for API data later. `slug` is used for links like /projects#slug.
 
+import Weelchair from "../assets/weelchair.png";
+import SchoolWater from "../assets/school_water.png";
+import NewBorn from "../assets/new_born.png";
+import Kisoro from "../assets/kisoro.png";
+import Elder from "../assets/elder.png";
+import Desks from "../assets/Desks.png";
+import AdoptVillage from "../assets/adoptVillage.png";
+import Neonatal from "../assets/neonatal.png";
+import Exam from "../assets/exam.png";
+import Care from "../assets/care.png";
+import Bed from "../assets/bed.png";
+import Water from "../assets/water.png";
+
 export const projectCategories = [
   "All",
   "Health",
@@ -20,7 +33,7 @@ export const allProjects = [
     category: "Water & sanitation",
     title: "Clean water for six city schools",
     summary: "Latrines and rainwater tanks for 2,436 pupils in Masaka City.",
-    image: "/images/kids.jpg",
+    image: SchoolWater,
     imageAlt: "Children at a school outreach",
   },
   {
@@ -29,7 +42,7 @@ export const allProjects = [
     title: "Neonatal care support",
     summary:
       "Equipment for the newborn unit at Masaka Regional Referral Hospital.",
-    image: "/images/group2.jpg",
+    image: NewBorn,
     imageAlt: "Club members at a project site",
   },
   {
@@ -38,7 +51,7 @@ export const allProjects = [
     title: "Exam kits for 208 pupils",
     summary:
       "Geometry sets, books and sanitary towels for P.6 and P.7 learners.",
-    image: "/images/vest.jpg",
+    image: Exam,
     imageAlt: "Volunteers working together outdoors",
   },
   {
@@ -47,7 +60,7 @@ export const allProjects = [
     title: "Kyabakuza medical camp",
     summary:
       "Free treatment, screening and blood donation for local residents.",
-    image: "/images/vest2.jpg",
+    image: Care,
     imageAlt: "Volunteers at a community day",
   },
   {
@@ -56,7 +69,7 @@ export const allProjects = [
     title: "Maternity mattresses",
     summary:
       "100 hospital-grade mattresses for Masaka Regional Referral Hospital.",
-    image: "/images/plant2.jpg",
+    image: Bed,
     imageAlt: "Saplings being planted",
   },
   {
@@ -64,7 +77,7 @@ export const allProjects = [
     category: "Health",
     title: "Buwunga Health Centre",
     summary: "A delivery bed and emergency supplies for the maternity ward.",
-    image: "/images/outreach.jpg",
+    image: Neonatal,
     imageAlt: "Women carrying supplies",
   },
   {
@@ -72,7 +85,7 @@ export const allProjects = [
     category: "Water & sanitation",
     title: "Kisoro water project",
     summary: "Clean water, sanitation and income support for women in Kisoro.",
-    image: "/images/planting.jpg",
+    image: Kisoro,
     imageAlt: "A volunteer planting saplings",
   },
   {
@@ -80,7 +93,7 @@ export const allProjects = [
     category: "Community",
     title: "Adopt a village, Kyakatebe",
     summary: "A community health centre built with Rotary Club of Innisfail.",
-    image: "/images/vest3.jpg",
+    image: AdoptVillage,
     imageAlt: "Volunteers digging",
   },
   {
@@ -88,7 +101,7 @@ export const allProjects = [
     category: "Community",
     title: "Housing for the vulnerable",
     summary: "A two-bedroom home for an elderly woman and her dependants.",
-    image: "/images/hero-poster.jpg",
+    image: Elder,
     imageAlt: "Club members gathered together",
   },
   {
@@ -96,7 +109,7 @@ export const allProjects = [
     category: "Community",
     title: "Wheelchairs project",
     summary: "Wheelchairs for children and adults with disabilities.",
-    image: "/images/kids.jpg",
+    image: Weelchair,
     imageAlt: "Children at an outreach",
   },
   {
@@ -104,7 +117,7 @@ export const allProjects = [
     category: "Education",
     title: "Desks and girls’ toilets",
     summary: "Desks for St Charles S.S. Kyansi and a new girls’ toilet block.",
-    image: "/images/vest.jpg",
+    image: Desks,
     imageAlt: "Volunteers on a project day",
   },
   {
@@ -112,7 +125,7 @@ export const allProjects = [
     category: "Water & sanitation",
     title: "Schools water and toilets",
     summary: "Toilets for four schools and water tanks for five.",
-    image: "/images/group2.jpg",
+    image: Water,
     imageAlt: "Club members outdoors",
   },
 ];

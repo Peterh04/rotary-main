@@ -1,4 +1,9 @@
 // News page content. Swap for API/CMS data later. `slug` is used for links like /news#slug.
+import sotiusSsegewa from "../assets/sotius_ssegewa.png";
+import Water from "../assets/water.png";
+import NewBorn from "../assets/new_born.png";
+import Bed from "../assets/bed.png";
+import Exam from "../assets/exam.png";
 
 export const newsIntro = {
   eyebrow: "What’s new",
@@ -20,7 +25,7 @@ export const allNews = [
     category: "Club",
     date: "9 June 2026",
     title: "Sotius Ssegawa installed as 42nd president",
-    image: "/images/hero-poster.jpg",
+    image: sotiusSsegewa,
     imageAlt: "Club members gathered together",
   },
   {
@@ -28,7 +33,7 @@ export const allNews = [
     category: "Water & sanitation",
     date: "Rotary year 2026/27",
     title: "Six city schools to get clean water",
-    image: "/images/planting.jpg",
+    image: Water,
     imageAlt: "A volunteer planting saplings",
   },
   {
@@ -36,7 +41,7 @@ export const allNews = [
     category: "Health",
     date: "19 December 2025",
     title: "New equipment for the newborn unit",
-    image: "/images/vest.jpg",
+    image: NewBorn,
     imageAlt: "Volunteers on a project day",
   },
   {
@@ -52,7 +57,7 @@ export const allNews = [
     category: "Education",
     date: "30 November 2025",
     title: "Exam kits for 208 pupils",
-    image: "/images/kids.jpg",
+    image: Exam,
     imageAlt: "Children at a school outreach",
   },
   {
@@ -60,7 +65,7 @@ export const allNews = [
     category: "Health",
     date: "30 August 2025",
     title: "First 30 of 100 mattresses delivered",
-    image: "/images/plant2.jpg",
+    image: Bed,
     imageAlt: "Saplings being planted",
   },
 ];

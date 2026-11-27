@@ -1,4 +1,9 @@
 // Gallery content. Swap for API/CMS data later. Each photo: { src, caption, alt? }.
+import Maternal from "../assets/maternal.png";
+import Motivated from "../assets/motivated.png";
+import Education from "../assets/Education.png";
+import tree_planting from "../assets/tree_planting.png";
+import childrens_home from "../assets/Nazareen_childrens_home.png";
 
 export const galleryIntro = {
   eyebrow: "In pictures",
@@ -7,16 +12,22 @@ export const galleryIntro = {
 };
 
 export const photos = [
+  { src: Maternal, caption: "Maternal & Child Health Project" },
   {
-    src: "/images/hero-poster.jpg",
-    caption: "Members and friends of the club",
+    src: Motivated,
+    caption: "Volunteers are driven by intrinsic motivation to heelp others",
   },
-  { src: "/images/planting.jpg", caption: "Community tree planting" },
-  { src: "/images/kids.jpg", caption: "Outreach with local children" },
-  { src: "/images/vest.jpg", caption: "Volunteers at work" },
-  { src: "/images/outreach.jpg", caption: "Delivering support to families" },
-  { src: "/images/vest2.jpg", caption: "Planting day" },
-  { src: "/images/vest3.jpg", caption: "Digging in" },
-  { src: "/images/group2.jpg", caption: "The team together" },
-  { src: "/images/plant2.jpg", caption: "Saplings in the ground" },
+  {
+    src: Education,
+    caption:
+      "Implemented an Education Support Project under Basic Education and Literacy",
+  },
+  {
+    src: tree_planting,
+    caption: "Tree Planting with District Governor at Buwunga Health Centre ",
+  },
+  {
+    src: childrens_home,
+    caption: "Supporting Nazareth Childrens home for the last 10years ",
+  },
 ];
