@@ -5,7 +5,7 @@ import SchoolWater from "../assets/school_water.png";
 import NewBorn from "../assets/new_born.png";
 import Kisoro from "../assets/kisoro.png";
 import Elder from "../assets/elder.png";
-import Desks from "../assets/Desks.png";
+import Desks from "../assets/desks.png";
 import AdoptVillage from "../assets/adoptVillage.png";
 import Neonatal from "../assets/neonatal.png";
 import Exam from "../assets/exam.png";
